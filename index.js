@@ -38,6 +38,6 @@ app.use(cors(corsOptions))
 
 connectDB().then(() => {
     app.listen(port, () => {
-        console.log(`server is starting at port ${port}`)
+        console.log(`server is starting at port ${7050}`)
     })
 })

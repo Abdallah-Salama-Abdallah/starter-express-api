@@ -97,7 +97,7 @@ module.exports.getbycat = async (req, res) => {
     })
 }
 module.exports.SearchByName = (req, res) => {
-    Product.find({ name: { $regex: '.*' + req.body.query + '.*' } }).limit(6)
+    Product.find({ name: { $regex: '.*' + req.body.query + '.*' } })
         .then(response => {
 
             res.json({
